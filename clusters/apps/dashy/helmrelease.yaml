@@ -23,7 +23,7 @@ spec:
           claimName: dashy-pvc
     volumeMounts:
       - name: dashy-volume
-        mountPath: /app
+        mountPath: /app/user-data/
     ingress:
       enabled: true
       className: "traefik"
