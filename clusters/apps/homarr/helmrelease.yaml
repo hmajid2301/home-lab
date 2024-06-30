@@ -29,25 +29,25 @@ spec:
       AUTH_OIDC_CLIENT_SECRET:
         name: homarr-oauth
         key: client-secret
-    # persistence:
-    #   - name: homarr-config
-    #     enabled: true
-    #     storageClassName: "longhorn"
-    #     accessMode: "ReadWriteOnce"
-    #     size: "50Mi"
-    #     mountPath: "/app/data/configs"
-    #   - name: homarr-database
-    #     enabled: true
-    #     storageClassName: "longhorn"
-    #     accessMode: "ReadWriteOnce"
-    #     size: "50Mi"
-    #     mountPath: "/app/database"
-    #   - name: homarr-icons
-    #     enabled: true
-    #     storageClassName: "longhorn"
-    #     accessMode: "ReadWriteOnce"
-    #     size: "50Mi"
-    #     mountPath: "/app/public/icons"
+    persistence:
+      - name: homarr-config
+        enabled: true
+        storageClassName: "longhorn"
+        accessMode: "ReadWriteOnce"
+        size: "50Mi"
+        mountPath: "/app/data/configs"
+      - name: homarr-database
+        enabled: true
+        storageClassName: "longhorn"
+        accessMode: "ReadWriteOnce"
+        size: "50Mi"
+        mountPath: "/app/database"
+      - name: homarr-icons
+        enabled: true
+        storageClassName: "longhorn"
+        accessMode: "ReadWriteOnce"
+        size: "50Mi"
+        mountPath: "/app/public/icons"
     ingress:
       enabled: true
       className: traefik
