@@ -71,7 +71,7 @@ spec:
           kubernetes.io/ingress.class: "traefik"
           cert-manager.io/cluster-issuer: "letsencrypt-prod"
         hosts:
-          - host: homarr
+          - host: homarr.homelab.haseebmajid.dev
             paths:
               - path: /
                 service:
