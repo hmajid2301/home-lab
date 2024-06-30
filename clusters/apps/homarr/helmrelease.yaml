@@ -87,19 +87,19 @@ spec:
         type: persistentVolumeClaim
         accessMode: ReadWriteOnce
         size: 50Mi
-        className: longhorn
+        storageClass: longhorn
         globalMounts:
           - path: /app/data/configs
       database:
         type: persistentVolumeClaim
         accessMode: ReadWriteOnce
-        className: longhorn
+        storageClass: longhorn
         size: 50Mi
         globalMounts:
           - path: /data
       icons:
         type: persistentVolumeClaim
-        className: longhorn
+        storageClass: longhorn
         accessMode: ReadWriteOnce
         size: 50Mi
         globalMounts:
