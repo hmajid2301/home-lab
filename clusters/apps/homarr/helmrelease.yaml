@@ -80,7 +80,6 @@ spec:
       tls:
         - hosts:
             - homarr.homelab.haseebmajid.dev
-          secretName: homarr-haseebmajid-dev-tls
 
     persistence:
       config:
