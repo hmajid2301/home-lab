@@ -20,7 +20,7 @@ spec:
     volumes:
       - name: dashy-volume
         persistentVolumeClaim:
-          claimName: dashy
+          claimName: dashy-pvc
     volumeMounts:
       - name: dashy-volume
         mountPath: /app
