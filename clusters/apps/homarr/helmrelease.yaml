@@ -70,17 +70,17 @@ spec:
         annotations:
           kubernetes.io/ingress.class: "traefik"
           cert-manager.io/cluster-issuer: "letsencrypt-prod"
-          hosts:
-            - host: homarr
-              paths:
-                - path: /
-                  service:
-                    identifier: homarr
-                    port: http
-        tls:
-          - hosts:
-              - homarr.homelab.haseebmajid.dev
-            secretName: homarr-haseebmajid-dev-tls
+        hosts:
+          - host: homarr
+            paths:
+              - path: /
+                service:
+                  identifier: homarr
+                  port: http
+      tls:
+        - hosts:
+            - homarr.homelab.haseebmajid.dev
+          secretName: homarr-haseebmajid-dev-tls
 
     persistence:
       config:
