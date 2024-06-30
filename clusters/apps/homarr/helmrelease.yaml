@@ -77,9 +77,9 @@ spec:
                 service:
                   identifier: homarr
                   port: http
-      tls:
-        - hosts:
-            - homarr.homelab.haseebmajid.dev
+        tls:
+          - hosts:
+              - homarr.homelab.haseebmajid.dev
 
     persistence:
       config:
