@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: selfhosted-helmcharts
         namespace: apps
-      version: 0.1.18
+      version: 0.1.8
   interval: 1h
   values:
     static:
