@@ -14,7 +14,7 @@ spec:
       version: 5.2.0
   interval: 1h
   values:
-    replicas: 4
+    replicas: 2
     consoleIngress:
       enabled: true
       ingressClassName: traefik
