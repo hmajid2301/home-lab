@@ -15,7 +15,11 @@ spec:
   interval: 1h
   values:
     replicas: 2
-    persistence.size: 20Gi
+    persistence:
+      enabled: true
+      storageClass: longhorn
+      accessMode: ReadWriteOnce
+      size: 20Gi
     consoleIngress:
       enabled: true
       ingressClassName: traefik
