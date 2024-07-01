@@ -19,3 +19,12 @@ spec:
       create: true
     runners:
       secret: gitlab-runner-secret
+    config: |
+      [[runners]]
+        [runners.kubernetes]
+          image = "ubuntu:24.04"
+          privileged = true
+        [[runners.kubernetes.volumes.empty_dir]]
+          name = "docker-certs"
+          mount_path = "/var/run"
+          medium = "Memory"
